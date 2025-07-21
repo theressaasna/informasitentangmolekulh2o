@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{display: block;}
+
+body {line-height: 1;}
+
+ol, ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+/*SINTAKS DIATAS DIAMBIL DARI MEYERWEB.*/
+
+/*Sedangkan dibawah ini adalah sintaks buatan kita sendiri. */
+
+body {
+	font: 17px/28px arial sans-serif; 
+	background-color: #9af5b2;
+	color: #333333;
+	background-image: url(foto1.jpg);
+	background-size: cover; /* Buat gambar mengisi seluruh area layar */
+	background-repeat: no-repeat; /* Jangan ulang gambar */
+	background-position: center; /* Posisikan gambar di tengah */
+	background-attachment: fixed; /* Supaya background tidak ikut scroll */
+	font-family: 'Segoe UI', sans-serif; /* Gunakan font modern dan rapi */
+	}
+/*16px adalah ukuran standar dan 28px adalah jarak antar baris*/
+
+.container {width: 800px;margin: auto;
+				background-color: #e3e8e8;
+				border: 3px solid lightcyan;}
+
+.header {padding:auto;}
+
+.header-content {
+	display: flex;
+	align-items: center;
+}
+
+.header img {
+	height: 100px;
+	width: auto;
+	padding: 50px;
+	display: block;
+}
+
+.judul {font-size: 15px;
+		 font-weight: bold;
+		 padding: 0;}
+
+
+.header a {text-decoration: none;
+				background-color: #ffcccc;
+				padding: 3px;
+				color: salmon;}
+
+.header a:hover {background-color: #00ffbf;
+						color: white;}
+
+
+.content {padding-left: 60px;
+			 padding-right: 60px;
+			 }
+
+.content h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: skyblue;
+	text-align: center;}	
+
+
+.content ul li {display: inline-block;
+					 font-size: 15px;
+					 font-family: arial;
+					 margin-top: -3px;
+					}	
+
+ol li {text-indent: -20px;
+		margin-left: 40px;}
+
+.content a {text-decoration: none;color: salmon;} 											
+
+p, ol, li {text-align: justify;}
+
+
+#team {
+  padding: 80px 20px;
+  background-color: #c6cccc;
+}
+
+#team h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 10px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #aaa;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 0 2px 0;
+  color: #222;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.content .footer {
+	font-size: 15px;
+}
